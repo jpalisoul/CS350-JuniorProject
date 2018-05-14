@@ -1,0 +1,5 @@
+- Changed SelectAttendanceDetailsUser to return '00-00-0000' if the result set is empty as in the user has no record of that class. Didn't want to change the format of what we return when it works.
+- Changed SelectAttendanceDetailAdmin to return 'F;0' if no one is enrolled in the class they look for.
+- Changed SelectAttendanceDetailAdmin to return everyone enrolled in the class instead of who has attended so now it returns 'Name;0' if not attended but enrolled.
+
+Let me know if you have any other issues.
